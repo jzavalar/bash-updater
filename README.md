@@ -71,7 +71,7 @@ So, the error was fixed when you test this script:
 $ updater.sh -V -u <user_API> -p <secret_API> -H yourhost.ydns.eu >>/path/to/ydns/updater.log 2>&1
 ```
 
-You shourd check the log file:
+You should check it in the log file:
 
 ```
 [2023/07/18T20:34:34] Current IP: 2107:1067:1610:90aa:95cd:b6ed:eeb6:bbbb
