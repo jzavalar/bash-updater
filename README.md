@@ -88,13 +88,13 @@ You should check it in the log file:
 To run this script every 15 minutes using `crontab`, add the following line to your crontab list:
 
 ```bash
-*/15 * * * * /path/to/script/updater.sh > /dev/null
+*/15 * * * * updater.sh -V >>/path/to/ydns/updater.log 2>&1
 ```
 
 Although this works on most all implementations of `crontab`, for more portability use this instead:
 
 ```bash
-0,15,30,45 * * * * /path/to/script/updater.sh > /dev/null
+0,15,30,45 * * * * updater.sh -V >>/path/to/ydns/updater.log 2>&1
 ````
 
 **NOTE:** To gain access to the crontab list to edit and add entries, execute `crontab -e` at the terminal
